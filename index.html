@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Sneakers</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="wrapper">
+                <div class="header__navigation">
+                    <div class="wrapper">
+                        <div class="header__logo">
+                            <a href="index.html"">
+                                <img src=" assets/img/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <nav class="navigation">
+                            <div class="wrapper">
+                                <div class="nav__item"><a href="#">Collections</a></div>
+                                <div class="nav__item"><a href="#">Men</a></div>
+                                <div class="nav__item"><a href="#">Women</a></div>
+                                <div class="nav__item"><a href="#">About</a></div>
+                                <div class="nav__item"><a href="#">Contact</a></div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header__about">
+                    <div class="wrapper">
+                        <div class="header__cart">
+                            <div class="cart__img" data-count="0">
+                                <img src="assets/img/icon-cart.svg" alt="">
+                            </div>
+                            <div class="cart__inner">
+                                <div class="inner__title">
+                                    <p>Cart</p>
+                                </div>
+                                <hr>
+                                <div class="cart__wrapper"></div>
+                                <p class="cart__text">Your cart is empty</p>
+                                <div class="product__button">
+                                    <button class="checkout__button">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__user">
+                            <img src="assets/img/image-avatar.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </header>
+
+    <section class="product">
+        <div class="product__container">
+            <div class="wrapper">
+                <div class="product__img">
+                    <div class="main__img" id="mainImg">
+                        <img src="assets/img/image-product-1.jpg" alt="">
+                    </div>
+                    <div class="imgs__thumbnails">
+                        <div class="wrapper">
+                            <div class="img__item active" id="thumb1">
+                                <img src="assets/img/image-product-1-thumbnail.jpg" alt="">
+                            </div>
+                            <div class="img__item" id="thumb2">
+                                <img src="assets/img/image-product-2-thumbnail.jpg" alt="">
+                            </div>
+                            <div class="img__item" id="thumb3">
+                                <img src="assets/img/image-product-3-thumbnail.jpg" alt="">
+                            </div>
+                            <div class="img__item" id="thumb4">
+                                <img src="assets/img/image-product-4-thumbnail.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <div class="product__suptitle">
+                        <p>sneaker company</p>
+                    </div>
+                    <div class="product__title">
+                        <p>Fall Limited Edition Sneakers</p>
+                    </div>
+                    <div class="product__text">
+                        <p>These low-profile sneakers are you perfect casual wear companion. Featuring a durable rubber
+                            outer sole, they'll withstand everything the weather can offer.</p>
+                    </div>
+                    <div class="product__price">
+                        <div class="wrapper">
+                            <div class="price">
+                                <p>$125.00</p>
+                                <p class="cross">$250.00</p>
+                            </div>
+                            <div class="discount">
+                                <p>50%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__functions">
+                        <div class="wrapper">
+                            <div class="increase__item">
+                                <div class="wrapper">
+                                    <div id="minus">
+                                        <img src="assets/img/icon-minus.svg" alt="">
+                                    </div>
+                                    <p class="amount"></p>
+                                    <div id="plus">
+                                        <img src="assets/img/icon-plus.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__button">
+                                <button id="addToCart"><img src="assets/img/icon-cart.svg" alt=""> Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <div class="modal__inner">
+            <div class="modal__img modalImg imgActive">
+                <img id="modalMainImg" src="assets/img/image-product-1.jpg" alt="">
+            </div>
+            <div class="modal__img modalImg">
+                <img id="modalMainImg" src="assets/img/image-product-2.jpg" alt="">
+            </div>
+            <div class="modal__img modalImg">
+                <img id="modalMainImg" src="assets/img/image-product-3.jpg" alt="">
+            </div>
+            <div class="modal__img modalImg">
+                <img id="modalMainImg" src="assets/img/image-product-4.jpg" alt="">
+            </div>
+            <div class="modal__imgs">
+                <div class="item__img thumbImg thumbImgActive">
+                    <img src="assets/img/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                <div class="item__img thumbImg">
+                    <img src="assets/img/image-product-2-thumbnail.jpg" alt="">
+                </div>
+                <div class="item__img thumbImg">
+                    <img src="assets/img/image-product-3-thumbnail.jpg" alt="">
+                </div>
+                <div class="item__img thumbImg">
+                    <img src="assets/img/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </div>
+            <div class="arrow__buttons">
+                <div class="prev__button">
+                    <button id="modalPrev">
+                        <img src="assets/img/icon-previous.svg" alt="">
+                    </button>
+                </div>
+                <div class="next__button">
+                    <button id="modalNext">
+                        <img src="assets/img/icon-next.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="close__button">
+                <button id="close">
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#fff" fill-rule="evenodd"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+
+
+</html>
